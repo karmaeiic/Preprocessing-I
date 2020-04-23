@@ -55,28 +55,84 @@ table {
 
 html, body {
     height: 100%;
+    font-size: 65.4%;
 }
 
+
+
+.displayflex {
+    display:flex;
+    justify-content: center;
+}
+
+.padding {
+    padding: 4%;
+
+}
+
+header{
+
+h1 {
+    .padding();
+    .displayflex();
+    font-size: 4rem;
+background-color: red;
+
+img {
+    padding: 0;
+    display: block;
+    margin: 0 auto;
+    max-height: 100%;
+    max-width: 100%;
+}
+}
+
+}
 .nav {
-    display: inline-flex;
-    justify-content: space-evenly;
+    .displayflex();
     flex-direction: row;
     margin: 3rem;
     align-items: flex-end;
 
-a li {
+a {
     color: rgb(20, 20, 20);
-    padding: .7em 1em;
+    .padding();
     font-size: 17px;
     text-decoration: none;
-}
-}
-
-
-li a:hover {
+    
+a:hover {
     color: #7eb9be;
 }   
+}
+}
 
-h1 {
-background-color: red;
+.list-box{
+
+    h2{
+        font-size: 2rem;
+
+
+    
+    li{
+        .padding()
+    width: 50%;
+	display: inline-grid;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    font-size: 2rem;
+}
+}
+}
+
+p {
+    .padding();
+    font-size: 1.7rem;
+}
+
+
+footer{
+    .displayflex();
+    .padding();
+    background-color: red;
+    font-size: 1.7rem;
 }

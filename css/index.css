@@ -2,7 +2,6 @@
    v2.0 | 20110126
    License: none (public domain)
 */
-
 html,
 body,
 div,
@@ -84,17 +83,14 @@ time,
 mark,
 audio,
 video {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    font: inherit;
-    vertical-align: baseline;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
-
-
 /* HTML5 display-role reset for older browsers */
-
 article,
 aside,
 details,
@@ -106,67 +102,82 @@ hgroup,
 menu,
 nav,
 section {
-    display: block;
+  display: block;
 }
-
 body {
-    line-height: 1;
+  line-height: 1;
 }
-
 ol,
 ul {
-    list-style: none;
+  list-style: none;
 }
-
 blockquote,
 q {
-    quotes: none;
+  quotes: none;
 }
-
 blockquote:before,
 blockquote:after,
 q:before,
 q:after {
-    content: '';
-    content: none;
+  content: '';
+  content: none;
 }
-
 table {
-    border-collapse: collapse;
-    border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
-
-
 /* Set every element's box-sizing to border-box */
-
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
-
 html,
 body {
-    height: 100%;
+  height: 100%;
+  font-size: 65.4%;
 }
-
-.nav {
-    display: inline-flex;
-    justify-content: space-evenly;
-    flex-direction: row;
-    margin: 3rem;
-    align-items: flex-end;
+.displayflex {
+  display: flex;
+  justify-content: center;
 }
-
-.nav a li {
-    color: #141414;
-    padding: 0.7em 1em;
-    font-size: 17px;
-    text-decoration: none;
+.padding {
+  padding: 4%;
 }
-
-li a:hover {
-    color: #7eb9be;
+header h1 {
+  padding: 4%;
+  display: flex;
+  justify-content: center;
+  font-size: 4rem;
+  background-color: red;
 }
-
-h1 {
-    background-color: red;
+header h1 .thumbsup {
+  width: 100%;
+}
+nav {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  margin: 3rem;
+  align-items: flex-end;
+}
+nav li {
+  color: #141414;
+  padding: 4%;
+  font-size: 17px;
+  text-decoration: none;
+}
+nav li a:hover {
+  color: #7eb9be;
+}
+.list-box {
+  display: flex;
+  justify-content: center;
+  width: 50%;
+  flex-direction: column;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  font-size: 2rem;
+}
+p {
+  padding: 4%;
+  font-size: 1.7rem;
 }
